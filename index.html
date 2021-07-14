@@ -1,482 +1,429 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Brad Hanel's Portfolio</title>
+  <title>Bee Hanel</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel='icon' href='projects/favicon.png' type='image/x-icon'/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- Favicons -->
+  <link href="assets/img/bee-hanel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Sirin+Stencil&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v2.0.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-<header>
-<h1 class="animated bounceInDown">BRAD HANEL</h1>  
-</header>    
+
+  <nav class="navbar navbar-light custom-navbar" id="header">
+    <div class="container">
+    </div>
+    <div id="name" class="row mb-5 align-items-center">
+      <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+          <h2>BLAISE "BEE" HANEL</h2>
+          <p class="mb-0">(they/them)</p>
+          <p class="mb-0">Game developer, composer, linguist</p>
+        </div>
+         <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100" id="filtersparent">
+            <div id="pagecontents" class="pagecontents">
+                <a href="#works" >Games</a>
+                <a href="#audio" >Audio</a>
+                <a href="#scripts" >Writing</a>
+                <a href="#aboutme" >About Me</a>
+                <a href="#contact" >Contact</a>
+            </div>
+          </div>
+        </div>
+  </nav>
     
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks"  onclick="openTab(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'Games')">Games</button>
-  <button class="tablinks" onclick="openTab(event, 'Web')">Web</button>
-  <button class="tablinks" onclick="openTab(event, 'Misc')">Misc</button>
-  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
-</div>
 
-<!-- Tab content -->
-<div id="Home" class="tabcontent">
-  <img id="brad" src="projects/me.png">
-  <p><em>Game and UX programmer | C#, Java, HTML, CSS, Javascript, C++ | Seeking internships for Summer 2020.</em>
-  <br><br><br>
-  Hi! My name is Brad Hanel and I'm a 4th-year Game Design and Development student. I write comedy sketches, I like music making, and I'm a big fan of baseball. Je parle français aussi! Along the top bar are some of my projects many of which link to their respective Github repositories.</p>
-</div>    
+  <main id="main">
+    <!-- ======= Works Section ======= -->
 
+        <!-- ======= Works Section ======= -->
+        <section class="section site-portfolio pb-0">
+          <div class="container" id="works" data-aos="fade-up" data-aos-delay="200">
+            <div class="row mb-5 align-items-end">
+              <div class="col-md-6" data-aos="fade-up">
+                <h2>Development</h2>
+              </div>
     
-<div id="Games" class="tabcontent">
-
-  <h3>Click the images for more information!</h3>
-  <div class="project">
-    <button id="Project1"><img src="projects/games/project1/main.png"></button>
-    <p>Snowglobe (Unity/Maya) - Modeling, Texturing, Animation</p>
-  </div>
-  <div class="project">
-    <button id="Asteroids"><img src="projects/games/asteroids/main.png"></button>
-    <p>Asteroids (C#/Unity) - Solo Developer</p> 
-  </div>
-  <div class="project">
-    <button id="HVZ"><img src="projects/games/HVZ/main.png"></button>
-    <p>Hockey vs Zombies (C#/Unity) - Solo Developer</p>
-  </div>
-  <div class="project">
-    <button id="hang-time"><img src="projects/games/hang-time/main.PNG"></button>
-    <p>Hang Time (C++/Unreal) - VFX/Level Design</p>
-  </div>
-  <div class="project">
-    <button id="TakeTheBait"><img src="projects/games/take-the-bait/main.png"></button>
-    <p>Take The Bait (C#/Monogame) - UI Programmer</p>
-  </div>
-  <div class="project">
-    <button id="ShoppingKart"><img src="projects/games/build-a-tree/main.png"></button>
-    <p>Build A Tree (Analog Card Game) - Designer</p>
-  </div>
-  
-
-</div>
-
-<div id="Web" class="tabcontent">
-  <h3>Click the image to be linked directly to the work!</h3>
-  <div id="LastFM" class="project">
-    <a class="image" href="https://people.rit.edu/bxh9261/230/project2"><img src="projects/web/lastfm.PNG"></a>
-    <p>Last.FM Time Capsule - Co-Developer</p>
-  </div>
-  <div id="SeaSharp" class="project">
-    <a class="image" href="https://people.rit.edu/bxh9261/230/project1/project.html"><img src="projects/web/seasharp.PNG"></a>
-    <p>Sea Sharp - Solo Developer</p>
-  </div>
-  <div id="SandPiano" class="project">
-    <a class="image" href="https://bxh9261.github.io/sand-piano/"><img src="projects/web/sandpiano.png"></a>
-    <p>Sand Piano - Solo Developer</p>
-  </div>
-  <div id="HOGS" class="project">
-    <a class="image" href="https://hogs.rit.edu/"><img src="projects/web/hogs.png"></a>
-    <p>House of General Science Website - Code Maintenance</p>
-  </div>
-</div>
-
-<div id="Misc" class="tabcontent">
-  <h3>Click the image to be linked directly to the work!</h3>
-  <div id="Piano" class="project">
-    <a class="image" href="https://github.com/bxh9261/Larger-Than-Life-Piano"><img src="projects/misc/piano.PNG"></a>
-    <p>Larger Than Life Piano - Programmer</p>
-  </div>
-  <div id="rgb" class="project">
-    <a class="image" href="https://www.youtube.com/watch?v=JseLE14w5mE"><img src="projects/misc/rgb.PNG"></a>
-    <p>RGB Intro Animation - Animator</p>
-  </div>
-  <div id="edm" class="project">
-    <a class="image" href="https://soundcloud.com/brad-hanel/finaledm"><img src="projects/misc/edm.PNG"></a>
-    <p>Electronic Music Final - Artist</p>
-  </div>
-</div>
+            </div>
     
-<div id="Contact" class="tabcontent">
-  <p>Brad Hanel
-  <br>
-  220 John Street Apt 3201, Rochester, NY, 14623
-  <br>
-  bxh9261@g.rit.edu
-  <br>
-  585-645-8331
-  <br>
-  <a class="resume" href="Resume%2012.3.2019%20Web.pdf">View My Resume</a>
-  </p>
-</div>
+            <div id="portfolio-grid" class="row no-gutter">
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="http://alignment-charts.herokuapp.com/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Alignment Chart Creator (HTML/CSS/Javascript)</h3>
+                    <span>Developer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/alignment-charts.PNG">
+                </a>
+              </div>
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://github.com/bxh9261/SS-Asteroid" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>S.S. Asteroid (C#/Unity)</h3>
+                    <span>Developer, Composer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/ss-asteroid.PNG">
+                </a>
+              </div>
+              <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://bxh9261.github.io/Earth-Search/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Earth Search (HTML/CSS/Javascript)</h3>
+                    <span>Developer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/earth-search.PNG">
+                </a>
+              </div>
+              <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://bxh9261.github.io/Vinyl-Visualizer/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Vinyl Visualizer (HTML/CSS/Javascript)</h3>
+                    <span>Developer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/vinyl-visualizer.PNG">
+                </a>
+              </div>
+              <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://bxh9261.github.io/sand-piano/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Sand Piano (HTML/CSS/Javascript)</h3>
+                    <span>Designer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/sand-piano.PNG">
+                </a>
+              </div>
+              <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://bxh9261.github.io/last-fm-time-capsule/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Last.fm Time Capsule (HTML/CSS/Javascript)</h3>
+                    <span>Co-Developer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/last-fm.png">
+                </a>
+              </div>
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://github.com/bxh9261/hang-time/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Hang Time (C++/Unreal)</h3>
+                    <span>Level Designer, VFX</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/hang-time.png">
+                </a>
+              </div>
+              <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://hogs.rit.edu/" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>HoGS Webstie (HTML/CSS/Javascript)</h3>
+                    <span>Co-Developer, Code Maintenance</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/hogs.png">
+                </a>
+              </div>
+              <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://github.com/bxh9261/snowglobe" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Snowglobe (C#/Unity)</h3>
+                    <span>Developer, 3D Modeler</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/snowglobe.png">
+                </a>
+              </div>
+          </div>
+        </section><!-- End  Works Section -->
+
+        <section class="section site-portfolio pb-0">
+          <div class="container" id="audio" data-aos="fade-up" data-aos-delay="200">
+            <div class="row mb-5 align-items-end">
+              <div class="col-md-6" data-aos="fade-up">
+                <h2>Audio</h2>
+              </div>
     
-<!-- The Modal -->
-<div id="astModal" class="modal">
-    <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Asteroids</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="apic1">
-			    <img src="projects/games/asteroids/intro.PNG" height="350" width="500" alt="Image 1">
-			    <a class="previous" href="#apic5">&lt;</a>
-			    <a class="next" href="#apic2">&gt;</a>
-			    <h3>Intro Screen</h3>
-		    </div>
-		    <div id="apic2">
-			    <img src="projects/games/asteroids/story.png" height="350" width="500" alt="Image 2">
-			    <a class="previous" href="#apic1">&lt;</a>
-			    <a class="next" href="#apic3">&gt;</a>
-			    <h3>Opening Story</h3>
-		    </div>
-		    <div id="apic3">
-			    <img src="projects/games/asteroids/main.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#apic2">&lt;</a>
-			    <a class="next" href="#apic4">&gt;</a>
-			    <h3>Gameplay</h3>
-		    </div>
-		    <div id="apic4">
-			    <img src="projects/games/asteroids/gameover.png" height="350" width="500" alt="Image 4">
-			    <a class="previous" href="#apic3">&lt;</a>
-			    <a class="next" href="#apic5">&gt;</a>
-			    <h3>Game Over Screen</h3>
-		    </div>
-		    <div id="apic5">
-			    <img src="projects/games/asteroids/highscore.png" height="350" width="500" alt="Image 5">
-			    <a class="previous" href="#apic4">&lt;</a>
-			    <a class="next" href="#apic1">&gt;</a>
-			    <h3>High Score</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>Asteroids game created using C# in Visual Studio and Unity. Based on the classic Atari game Asteroids.</p>
-
-      <p>The game opens on a title screen, which instructs the user to press enter to begin. Randomly-placed stars zoom across the screen to give the illusion of movement.</p>
-
-      <p>The second game state is the opening story. Players are introduced to the characters: John, a charismatic rookie astronaut, Petrov, an old angry Russian astronaut, and Steve, an incompetent mission control worker. Steve and Petrov realize that they’re not going to Mars as they had planned, but instead, Jupiter. This means they’ll be flying through the asteroid belt!</p>
-
-      <p>The player takes control of the ship to fly across space and shoot or avoid the asteroids that are attempting to damage John and Petrov’s ship, the S.S. Asteroid. As the game progresses, the asteroids get faster!</p>
-
-      <p>The play continues until the player loses all three lives, and is sent to a game over screen, where they can compete for the highest scores.</p>
-
-      <h2>Game controls:</h2>
-      
-      <ul>
-      <li>SPACE – shoot</li>
-      <li>UP – accelerate</li>
-      <li>LEFT and RIGHT – rotate</li>
-      </ul>
-      
-      <h2>Title and game over screen controls:</h2>
-
-      <ul>
-      <li>ENTER – progress through story/menus</li>
-      <li>ESC – Skip to game or go back to main menu</li>
-      <li>The user can also type their initials for the leaderboard</li>
-      </ul>
-      
-      <h2>Sources:</h2>
-      
-      <ul>
-      <li>Asteroid explosions, ship respawn sound, and “bloop” sound when progressing through the story were all <a href=https://assetstore.unity.com/packages/audio/sound-fx/retro-sound-effects-22153>from the asset store</a></li>
-      <li>Ship shooting sound is my friend Mo saying “pew” pitched up an octave</li>
-      <li>Font found <a href=https://www.dafont.com/8-bit-madness.font>here</a></li>
-      <li>Everything else was made by me</li>
-      </ul>      
-      
-      <h2><a href="https://github.com/bxh9261/Asteroids">GitHub Link</a></h2>
-          
-  </div>
-</div>
-<div id="hvzModal" class="modal">
-      <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Hockey vs. Zombies</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="hpic1">
-			    <img src="projects/games/HVZ/main.png" height="350" width="500" alt="Image 1">
-			    <a class="previous" href="#hpic5">&lt;</a>
-			    <a class="next" href="#hpic2">&gt;</a>
-			    <h3>Gameplay</h3>
-		    </div>
-		    <div id="hpic2">
-			    <img src="projects/games/HVZ/debug.png" height="350" width="500" alt="Image 2">
-			    <a class="previous" href="#hpic1">&lt;</a>
-			    <a class="next" href="#hpic3">&gt;</a>
-			    <h3>Simulation with debug lines</h3>
-		    </div>
-		    <div id="hpic3">
-			    <img src="projects/games/HVZ/nodebug.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#hpic2">&lt;</a>
-			    <a class="next" href="#hpic4">&gt;</a>
-			    <h3>Simulation without debug lines</h3>
-		    </div>
-		    <div id="hpic4">
-			    <img src="projects/games/HVZ/zombieswarm.png" height="350" width="500" alt="Image 4">
-			    <a class="previous" href="#hpic3">&lt;</a>
-			    <a class="next" href="#hpic5">&gt;</a>
-			    <h3>Zombie Swarm</h3>
-		    </div>
-		    <div id="hpic5">
-			    <img src="projects/games/HVZ/shoot.png" height="350" width="500" alt="Image 5">
-			    <a class="previous" href="#hpic4">&lt;</a>
-			    <a class="next" href="#hpic1">&gt;</a>
-			    <h3>More Gameplay</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>Hockey vs. Zombies is a game I made in Unity, showcasing a simulation of autonomous agents who exhibit seeking, fleeing, obstacle avoidance, and separation.</p>
-
-      <p>The game has two modes, simulation mode and game mode. The user can watch the autonomous agents just go about being autonomous if they want, or enter game mode and shoot some zombies. If you die in game mode, you return to simulation mode.</p>
-
-      <p>There are also real* NHL announcers announcing the events of the game!</p>
-
-      <h2>Game controls:</h2>
-      
-      <ul>
-      <li>SPACE – shoot</li>
-      <li>UP – move forward</li>
-      <li>LEFT and RIGHT – rotate</li>
-      <li>DOWN - move backward</li>
-      </ul>
-      
-      <h2>Other on-screen buttons:</h2>
-
-      <ul>
-      <li>RESTART – restart game/simulation</li>
-      <li>SPAWN ZOMBIE – spawn a zombie</li>
-      <li>SPAWN HUMAN - spawn a human</li>
-      <li>HEAL HUMAN - save a boi</li>
-      <li>START GAME MODE - start game mode</li>
-      </ul>
-      
-      <h2>Sources:</h2>
-      
-      <ul>
-      <li><a href="https://www.youtube.com/watch?v=gs3ejd2ndYE">NHL Announcers</a></li>
-      <li><a href="https://free3d.com/3d-model/hockey-player-v1--295282.html">Human 3D Model</a></li>
-      <li><a href="https://free3d.com/3d-model/bobbleheadhockey-player-v1--252286.html">Zombie 3D Model</a></li>
-      <li><a href="https://www.thinglink.com/scene/796425271287742465">Ice Rink</a></li>
-      </ul>
-      
-      <h2><a href="https://github.com/bxh9261/HVZ">GitHub Link</a></h2>
-          
-  </div>
-</div>
-<div id="timeModal" class="modal">
-    <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Hang Time</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="hapic1">
-			    <img src="projects/games/hang-time/main.PNG" height="350" width="500" alt="You're Unreal <3">
-			    <a class="previous" href="#hapic3">&lt;</a>
-			    <a class="next" href="#hapic2">&gt;</a>
-			    <h3>Gameplay - Alternate Dimension</h3>
-		    </div>
-		    <div id="hapic2">
-			    <img src="projects/games/hang-time/hall.PNG" height="350" width="500" alt="I wonder what's down that spooky hallway. Probably nothing scary.">
-			    <a class="previous" href="#hapic1">&lt;</a>
-			    <a class="next" href="#hapic3">&gt;</a>
-			    <h3>Gameplay - Normal Dimension</h3>
-		    </div>
-		    <div id="hapic3">
-			    <img src="projects/games/hang-time/enemy.PNG" height="350" width="500" alt="Watch your six!">
-			    <a class="previous" href="#hapic2">&lt;</a>
-			    <a class="next" href="#hapic1">&gt;</a>
-			    <h3>Gameplay - Normal Dimension</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>I created this game for the Wild MAGIC game jam at RIT on October 12th and 13th, 2019, with Justin Vaughn, Nathan Harding, and Ryan Montero</p>
-      
-      <p>The game is a horror game, where the objective is to get through an asylum without being caught by the guards. The player has the ability to transport to an alternate dimension, where they are invisible to enemies and can walk through walls. However, the player can only be in this mode for a short amount of time before losing their sanity, so they must use their power sparingly.</p>
-      
-      <p>This was my first time ever using Unreal, so I learned about working with Unreal blueprints through a few VFX tutorials. I made the health indicator UI and designed the second level.</p>
-      
-       <h2>Game controls:</h2>
-      
-      <ul>
-      <li>WASD - Move</li>
-      <li>Right click - Dimension Shift</li>
-      <li>Left click - Interact</li>
-      </ul>
-      
-      <h2><a href="https://github.com/bxh9261/hang-time/">GitHub Link</a></h2>
-          
-  </div>
-</div>
-<div id="ttbModal" class="modal">
-      <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Take The Bait</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="tpic1">
-			    <img src="projects/games/take-the-bait/main%20menu.PNG" height="350" width="500" alt="Image 1">
-			    <a class="previous" href="#tpic5">&lt;</a>
-			    <a class="next" href="#tpic2">&gt;</a>
-			    <h3>Main Menu</h3>
-		    </div>
-		    <div id="tpic2">
-			    <img src="projects/games/take-the-bait/gameplay.PNG" height="350" width="500" alt="Image 2">
-			    <a class="previous" href="#tpic1">&lt;</a>
-			    <a class="next" href="#tpic3">&gt;</a>
-			    <h3>Gameplay</h3>
-		    </div>
-		    <div id="tpic3">
-			    <img src="projects/games/take-the-bait/more%20gameplay.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#tpic2">&lt;</a>
-			    <a class="next" href="#tpic4">&gt;</a>
-			    <h3>Gameplay</h3>
-		    </div>
-		    <div id="tpic4">
-			    <img src="projects/games/take-the-bait/main.png" height="350" width="500" alt="Image 4">
-			    <a class="previous" href="#tpic3">&lt;</a>
-			    <a class="next" href="#tpic5">&gt;</a>
-			    <h3>Gameplay</h3>
-		    </div>
-		    <div id="tpic5">
-			    <img src="projects/games/take-the-bait/settings%20menu.PNG" height="350" width="500" alt="Image 5">
-			    <a class="previous" href="#tpic4">&lt;</a>
-			    <a class="next" href="#tpic1">&gt;</a>
-			    <h3>Settings Menu</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>Take the Bait is a game developed by me and my friends Gavin DeWitt, Harry McCardell, and Ricky Norris for our game development class. We used Monogame in Visual Studio and coded in C#. I was responsible for the UI and visuals, though I worked on a lot of the back-end code too. The game is a vertical 2D-Scroller where the user has to catch as many fish as possible before hitting an obstacle.</p>
-      
-      <p>The game is turn-based, so 2 players can go back and forth trying to out-fish each other. If a player hits an obstacle, their turn is over. Each player gets 3 turns.</p>
-      
-      <p>The game is made more interesting with multiple levels, it gets faster and faster the longer you go without hitting an obstacle.</p>
-
-      <p>I learned a lot about game programming from this project, since it was one of my first big projects in any class. I learned a lot about inheritance, data structures, and all about C#, .NET, and Windows Forms.</p>
-
-      <h2>Game controls:</h2>
-      
-      <ul>
-      <li>WASD - Move</li>
-      </ul>
-      
-      <h2>Other on-screen buttons:</h2>
-
-      <ul>
-      <li>PLAY - play the game</li>
-      <li>RULES - read the rules</li>
-      <li>SETTINGS - activates a windows form that allows you to view high scores, change hook color, and change player names.</li>
-      </ul>
-      
-      <h2>Sources:</h2>
-      
-      <ul>
-      <li>Graphics made by myself, Harry McCardell, and <a href="https://www.foodrepublic.com/2014/07/10/a-condensed-history-of-the-campbells-tomato-soup-can/">Food Republic</a></li>
-      </ul>
-      
-      <h2><a href="https://kgcoe-git.rit.edu/bxh9261/take-the-bait/">GitHub Link</a></h2>
-          
-  </div>
-</div>
-<div id="kartModal" class="modal">
-      <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Build A Tree</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="kpic1">
-			    <img src="projects/games/build-a-tree/main.png" height="350" width="500" alt="Image 1">
-			    <a class="previous" href="#kpic3">&lt;</a>
-			    <a class="next" href="#kpic2">&gt;</a>
-			    <h3>All cards</h3>
-		    </div>
-            <div id="kpic2">
-			    <img src="projects/games/build-a-tree/4.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#kpic1">&lt;</a>
-			    <a class="next" href="#kpic3">&gt;</a>
-			    <h3>Early Gameplay</h3>
-		    </div>
-            <div id="kpic3">
-			    <img src="projects/games/build-a-tree/3.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#kpic2">&lt;</a>
-			    <a class="next" href="#kpic1">&gt;</a>
-			    <h3>Late Gameplay</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>Build A Tree is a card game all about growing a tree by growing and harvesting fruit.</p>
-      
-      <p>The game is somewhat like the card game Phase 10, in that each player needs to get a certain number of fruits on their tree in order to move to the next "phase." The player who completes three phases, as in filling their tree out with fruit, wins the game.</p>
-      
-      <p>All players have access to mix-up cards, which can allow players to swap, steal, or change fruits in order to improve their own tree or hinder someone else's</p>
-      
-      <h2><a href="https://docs.google.com/document/d/1u0v8CW_lr9K2h7WLa-clfaq7d2vwUXA0rw4FJRXHOfc/edit?usp=sharing">Full Rules</a></h2>
-          
-  </div>
-</div>
-<div id="proj1Modal" class="modal">
-    <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Snowglobe</h1>
-    <div class="gallerywrapper">
-	    <div class="gallery">
-		    <div id="p1pic1">
-			    <img src="projects/games/project1/main.png" height="350" width="500" alt="Image 1">
-			    <a class="previous" href="#p1pic5">&lt;</a>
-			    <a class="next" href="#p1pic2">&gt;</a>
-			    <h3>Interior Cabin</h3>
-		    </div>
-		    <div id="p1pic2">
-			    <img src="projects/games/project1/2.png" height="350" width="500" alt="Image 2">
-			    <a class="previous" href="#p1pic1">&lt;</a>
-			    <a class="next" href="#p1pic3">&gt;</a>
-			    <h3>Interior Cabin</h3>
-		    </div>
-		    <div id="p1pic3">
-			    <img src="projects/games/project1/3.png" height="350" width="500" alt="Image 3">
-			    <a class="previous" href="#p1pic2">&lt;</a>
-			    <a class="next" href="#p1pic4">&gt;</a>
-			    <h3>Snowman Sledding</h3>
-		    </div>
-            <div id="p1pic4">
-			    <img src="projects/games/project1/4.png" height="350" width="500" alt="Image 4">
-			    <a class="previous" href="#p1pic3">&lt;</a>
-			    <a class="next" href="#p1pic5">&gt;</a>
-			    <h3>Snowmen in an Igloo</h3>
-		    </div>
-             <div id="p1pic4">
-			    <img src="projects/games/project1/5.png" height="350" width="500" alt="Image 5">
-			    <a class="previous" href="#p1pic4">&lt;</a>
-			    <a class="next" href="#p1pic1">&gt;</a>
-			    <h3>View of the Exterior</h3>
-		    </div>
-	    </div>
-	</div>
-      <p>My final project for 3D Animation and Asset Production, made with Eddie Brazier, Nick Schnering, Alex Rosenbach, and Jack Watson.</p>  
-      
-      <p>My role in the project was primarily a modeler, texturer, and animator (as was everybody else), as we split up all the 3D models in the scene evenly. I made the snowglobe the user walks around in, the bookshelf and books, the mugs, and the snowman that looks like Frosty the Snowman. The snowman is animated in Maya, his hat falls off when the sledding snowman runs into him.</p>
-      
-      <p>In addition to my assigned role as a modeler, I worked a lot to keep the git maintained and up to date. I helped my teammates learn how to use git, and even though it can be a bit of a pain it was so much easier than sending back-and-forth over Google Drive or something like that.</p>
-      
-      <h2><a href="https://github.com/bxh9261/snowglobe">GitHub Link</a></h2>
-          
-  </div>
-</div>
-
+            </div>
     
-    
-  <script src="js/main.js" onload="openTab(event, 'Home')">
-  </script>
+            <div id="portfolio-grid" class="row no-gutter">
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://beeshere.bandcamp.com/album/celeste-quest" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Celeste Quest</h3>
+                  </div>
+                  <img class="img-fluid" src="assets/img/dnd-celeste-quest.png">
+                </a>
+              </div>
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://beeshere.bandcamp.com/album/bees-game-audio-volume-1" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Bee's Game Audio: Volume 1</h3>
+                  </div>
+                  <img class="img-fluid" src="assets/img/bee-game-audio-1.png">
+                </a>
+              </div>
+              <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="https://youtu.be/q5rJaTLiYGc" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>plastic babies and jello brains</h3>
+                    <span>Composer</span>
+                  </div>
+                  <img class="img-fluid" src="assets/img/jello-babies.jpg">
+                </a>
+              </div>
+          </div>
+        </section><!-- End  Works Section -->
+      
+      
+    <section class="section pb-0">
+      <div class="container" id="scripts">
+
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6" data-aos="fade-up">
+            <h2>Comedy Scripts</h2>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-5 mb-md-0" data-aos="fade-up">
+
+             <ul class="list-unstyled">
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/I Would! I Would! (1).pdf">I Would! I Would!</a></a></h3>
+                  <strong>Spring 2021 - Screenplay</strong><br>
+                <span>An alien gets sent down to earth to find humans to abduct, but finds friendship instead.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/The One With John F. Kennedy and the Bottle of Laundry Detergent.pdf">The One With John F. Kennedy and the Bottle of Laundry Detergent</a></h3>
+                  <strong>Fall 2020 - Screenplay</strong><br>
+                <span>It's the one with John F. Kennedy and the bottle of laundry detergent.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/Changing Times_ The Musical.pdf">Changing Times: The Musical</a></h3>
+                  <strong>Spring 2020 - Comedy Song</strong><br>
+                <span>A college student comes out to their parents via song, but it takes an unexpected turn.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/Sorry To Bother You.pdf">Sorry To Bother You</a></h3>
+                  <strong>Fall 2019 - Skit</strong><br>
+                <span>A father and his daughter are continuously harassed by a beggar on their trip to NYC.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/Burn The Witch.pdf">Burn The Witch</a></h3>
+                  <strong>Spring 2019 - Skit</strong><br>
+                <span>A woman in 1500's Salem gets tried for witchcraft, with her son as the plaintiff, who has some wild reasoning as to why his mom is a witch.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/1. 8.30.2019 Stone Cold.pdf">Stone Cold</a></h3>
+                  <strong>Spring 2019 - Skit</strong><br>
+                <span>A murder mystery, as someone is turning all the members of a rising rock band to stone!</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/Quote, Unquote (1).pdf">Quote, Unquote</a></h3>
+                  <strong>Spring 2019 - Skit</strong><br>
+                <span>College students attempt to buy shirts for their comedy club, but they're met by a sales clerk with an unusual aura.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/It's In Your Jeans.pdf">It's In Your Jeans</a></h3>
+                  <strong>Spring 2019 - Skit</strong><br>
+                <span>Pant Man battles the dastardly Shirt Woman as they both relive their troubled past.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/The Fine Print (So Fine...).pdf">The Fine Print</a></h3>
+                  <strong>Fall 2018 - Skit</strong><br>
+                <span>A robot designed for choas and destruction falls in love with a printer.</span>
+              </li>
+              <hr>
+             <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/S.S. Leapfrog.pdf">S.S. Leapfrog</a></h3>
+                 <strong>Fall 2018 - Skit</strong><br>
+                <span>John and Petrov blast off on a space mission, guided by an incompetent mission control officer.</span>
+              </li>
+              <hr>
+              <li class="mb-3">
+                <h3 class="d-block mb-1"><a href="assets/scripts/Would I_ Would I_.pdf">Would I? Would I?</a></h3>
+                  <strong>Spring 2017 - Skit</strong><br>
+                <span>An alien gets sent down to earth to find humans to abduct, but finds romance instead.</span>
+              </li>
+              <hr>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End  Scripts Section -->
+      
+    <!-- ======= About Me Section ======= -->
+    <section class="section pb-0">
+      <div class="container" id="aboutme">
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6" data-aos="fade-up">
+
+            <h2>About Me</h2>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+            <h3 class="h3 mb-4">Skills</h3>
+             <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong class="d-block mb-1">Development</strong>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 ml-3">&#9642; Professional Experience in Java and Android Studio</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in HTML, CSS, and Javascript</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in C#, Unity, and Visual Studio</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in Git</li>
+                    <li class="mb-3 ml-3">&#9642; Intermediate in C++</li>
+                    <li class="mb-3 ml-3">&#9642; Intermediate in Python</li>
+                    <li class="mb-3 ml-3">&#9642; Beginnner in Cobol</li>
+                  </ul>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Audio</strong>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 ml-3">&#9642; Proficient in FL Studio</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in MuseScore</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in Reaper</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in Audacity</li>
+                    <li class="mb-3 ml-3">&#9642; Intermediate in Ableton Live</li>
+                  </ul>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Other</strong>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 ml-3">&#9642; Intermediate in Adobe Photoshop</li>
+                    <li class="mb-3 ml-3">&#9642; Intermediate in Adobe After Effects</li>
+                    <li class="mb-3 ml-3">&#9642; Proficient in Microsoft Office Programs</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
+            <p><img src="assets/img/bee-hanel.jpg" alt="Image" class="img-fluid"></p>
+            <p>My name is Blaise "Bee" Hanel and I'm a recent graduate of Rochester Institute of Technology's Game Design & Development program. I have sufficient experience in several aspects of game development, but mainly programming and audio production. I have 1.5 years of professional experience working with Java and Android Studio as an intern with PAR Government. I have been accepted to Concordia University's Computational Linguistics program, starting in January 2022, and in the meantime I am looking for part-time remote development and composition opportunities. I'm currently solo developing a visual novel as a personal project. Contact me at the email below!</p>
+            <p><a href="assets/Hanel_Bee_Resumé.pdf" class="readmore">Download my Resumé</a></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section class="section pb-0">
+      <div class="container" id="contact">
+
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6" data-aos="fade-up">
+            <h2>Contact</h2>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
+
+             <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong class="d-block mb-1">Address</strong>
+                <span>3174 Culver Road, Rochester, NY, 14622</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Phone</strong>
+                <span>+1 585 645 8331</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Email</strong>
+                <span>bhanel1998@gmail.com</span>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and <a href="https://bxh9261.github.io/portfolio">Bee Hanel</a> 
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://beeshere.tumblr.com/"><span class="icofont-tumblr"></span></a>
+          <a href="https://soundcloud.com/brad-hanel"><span class="icofont-soundcloud"></span></a>
+          <a href="https://github.com/bxh9261"><span class="icofont-github"></span></a>
+          <a href="https://www.linkedin.com/in/brad-hanel-375a55162/"><span class="icofont-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
